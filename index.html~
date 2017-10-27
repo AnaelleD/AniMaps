@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>AniMaps</title>	
+  </head>
+  
+  <body>
+	<header>
+		<div class="photogauche"><img src="./Ressources/ours_blanc.jpg" alt="Ours" width="150" height="85" align="top" /></div> 
+		<div class="photodroite"><img src="./Ressources/panda.jpg" alt="Panda" width="270" height="100" align="top" /></div> 
+		<h1>Carte interactive des espèces en voie de disparition</h1>
+		
+		<ul id="menu_horizontal">
+		<li class="bouton_gauche"><a href="index.html">Accueil</a></li>
+		<li class="bouton_gauche"><a href="arborescence.html">a</a></li>
+		<li class="bouton_gauche"><a href="statistiques.html">b</a></li>
+		<li class="bouton_droite"><a href="contact.html">c</a></li>
+		</ul>
+	</header>
+
+	<div id="container">
+	<p> La carte sera ici.</p>
+	</div>
+	
+	<div id="container">
+	<p> La liste sera ici.</p>
+	</div>
+	
+	<footer> Mettre la liste des apis utilisées  </footer>
+	
+  </body>
+  
+</html>
