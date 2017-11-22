@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>AniMaps</title>	
-  </head>
-  
-  <body>
-	<header>
-		<div class="photogauche"><img src="../Ressources/ours_blanc.jpg" alt="Ours" width="150" height="150" align="top" /></div> 
-		<div class="photodroite"><img src="../Ressources/panda.jpg" alt="Panda" width="270" height="150" align="top" /></div> 
-		<h1>Carte interactive des espèces en danger</h1>
-	</header>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="style.css">
+		<title>AniMaps</title>	
+	
+		<script>
+		 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+		   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+		   crossorigin=""/>
+		   
+		 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+		   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+		   crossorigin="">
+		</script>
+	</head>
+	  
+	<body>
+		<header>
+			<div class="photogauche"><img src="../Ressources/ours_blanc.jpg" alt="Ours" width="150" height="150" align="top" /></div> 
+			<div class="photodroite"><img src="../Ressources/panda.jpg" alt="Panda" width="270" height="150" align="top" /></div> 
+			<h1>Carte interactive des espèces en danger</h1>
+		</header>
 
-	<script>
-	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
-	   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
-	   crossorigin=""/>
-	   
-	 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
-	   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
-	   crossorigin="">
-	</script>
-
-	<div id="mapid"></div>
-	
-	<div id="container">
-	<p> La liste sera ici.</p>
-	</div>
-	
-	<footer> Mettre la liste des apis utilisées  </footer>
-	
-  </body>
+		<div id="mapID">
+			<p> La carte sera ici.</p>	
+		</div>
+		
+		<div id="containID">
+			<p> Le détail sera ici.</p>
+		</div>
+		
+		<footer> Mettre la liste des apis/sites utilisés  </footer>
+		
+	</body>
   
 </html>
