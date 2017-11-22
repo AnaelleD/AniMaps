@@ -36,3 +36,13 @@ padding: 5px;
 text-align: center;
 font-family: verdana;
 }
+
+div.photogauche { 
+	float: left; 
+	margin-right:10px; /* marge en pixel à droite de la photo */ 
+} 
+
+div.photodroite { 
+	float: right; 
+	margin-left:10px; /* marge en pixel à gauche de la photo */ 
+} 
