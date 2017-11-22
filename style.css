@@ -5,18 +5,20 @@ h1 {
 	font-size: 30px;
 	text-align: center;
 }
+/*h2 pour sous-titres (nom animal) sur carte identité*/
 h2 {
-	color: green;
-	font-family: Verdana;
-	font-size: 25px;
+	color: black;
+	font-family: Liberation Sans;
+	font-size: 16.1px;
 }
+/*h3 pour sous-titres éventuels sur carte identité*/
 h3 {
-	color: green;
-	font-family: Verdana;
-	font-size: 20px;
+	color: black;
+	font-family: Liberation Sans;
+	font-size: 14.1px;
 }
 .centre{
-	font-family: Verdana;
+	font-family: Liberation Serif;
 	font-size: 15px;
 	text-align: center;
 }
@@ -27,14 +29,14 @@ margin-right: auto;
 width: 30%;
 padding: 5px;
 text-align: center;
-font-family: verdana;
+font-family: Liberation Serif;
 }
 td, th {
 border: thin solid #ffffff;
 width: 30%;
 padding: 5px;
 text-align: center;
-font-family: verdana;
+font-family: Liberation Serif;
 }
 
 div.photogauche { 
