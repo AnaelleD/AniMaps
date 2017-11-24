@@ -39,6 +39,62 @@ text-align: center;
 font-family: Liberation Serif;
 }
 
+body{
+	background-color: #E0E0E5
+}
+/*code pour tuile de contenu*/
+div#home[role="main"] ul#tiles-panel li {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0 8px 8px 0;
+    vertical-align: top;
+}
+ 
+.tile {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #F0F1F4;
+    border-bottom: 3px solid #7B4F9D;
+    display: inline-block;
+    height: 176px;
+    text-decoration: none;
+    vertical-align: top;
+    width: 176px;
+}
+ 
+.tile h1 {
+    color: #253340;
+    display: block;
+    font-family: "Segoe UI",Segoe,"Trebuchet MS",Tahoma,Geneva,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 148%;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-overflow : ellipsis;
+    overflow : hidden;
+    text-align : center;
+}
+ 
+.tile img {
+    left: 50%;
+    margin: 5px 0 10px -25px;
+    position: relative;
+}
+ 
+.tile p {
+    color: #6A747E;
+    font-family: "Segoe UI",Segoe,"Trebuchet MS",Tahoma,Geneva,sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 148%;
+    margin: 0;
+    padding: 0 10px;
+    text-align: center;
+}
+/*fin du code pour tuile de contenu*/
+
 div.photogauche { 
 	float: left; 
 	margin-right:10px; /* marge en pixel à droite de la photo */ 
