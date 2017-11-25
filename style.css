@@ -39,6 +39,62 @@ text-align: center;
 font-family: Liberation Serif;
 }
 
+body{
+	background-color: #E0E0E5
+}
+/*code pour tuile de contenu*/
+div#home[role="main"] ul#tiles-panel li {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0 8px 8px 0;
+    vertical-align: top;
+}
+ 
+.tile {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #F0F1F4;
+    border-bottom: 3px solid #7B4F9D;
+    display: inline-block;
+    height: 176px;
+    text-decoration: none;
+    vertical-align: top;
+    width: 176px;
+}
+ 
+.tile h1 {
+    color: #253340;
+    display: block;
+    font-family: "Segoe UI",Segoe,"Trebuchet MS",Tahoma,Geneva,sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 148%;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-overflow : ellipsis;
+    overflow : hidden;
+    text-align : center;
+}
+ 
+.tile img {
+    left: 50%;
+    margin: 5px 0 10px -25px;
+    position: relative;
+}
+ 
+.tile p {
+    color: #6A747E;
+    font-family: "Segoe UI",Segoe,"Trebuchet MS",Tahoma,Geneva,sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 148%;
+    margin: 0;
+    padding: 0 10px;
+    text-align: center;
+}
+/*fin du code pour tuile de contenu*/
+
 div.photogauche { 
 	float: left; 
 	margin-right:10px; /* marge en pixel à droite de la photo */ 
@@ -48,50 +104,75 @@ div.photodroite {
 	float: right; 
 	margin-left:10px; /* marge en pixel à gauche de la photo */ 
 } 
-###################################################################
-/*définition des polices personnalisées*/
+
+
 
 
 
 /* paramètres du HEADER */
 
-header
-{
-	background:
-url('images/fond_gris.png') repeat-x bottom;
-	display: flex;
-	justify-content: space-between;
-	align-item: flex-end
-}
-#header {
-	padding: 20px;
-	font-size: 36px;
-	background-color: #000;
-	color: #fff;
-}
-
-#logo
-{
-	display:flex;
-	flex-direction: row;
-	align-items: baseline:
-}
-
-#logo img
-{
-	width:100%
-	height: 100%
-}
-
-header h1
-{
-	font-family: 'Gilroy', serfi;
-	font-size: ;
-	font-weight: noraml;
-	margin: 0 0 0 10px;
+.header {
+	height: 200px;
+	width: auto;
+	padding:25px 0px;
+	background-color: LightSlateGray   ;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: top;
+	text-align:center;
 }
 
 
+.header.h1 {
+	color: DimGrey  ;
+	font-family: Optima, sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
 
+header.div.photogauche{
+	width: 100px; 
+	height: auto; 
+	float: left; 
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+}	
+
+header.div.photodroite{
+	float: right; 
+	margin-right:10px;
+}
 
 /* paramètres du FOOTER */
+
+.footer {
+	height: 200px;
+	width: auto;
+	padding:25px 0px;
+	background-color: LightSlateGray   ;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: top;
+	text-align:left;
+}
+
+/* lien non visités */
+a:link {
+    color: blue;
+}
+
+/* liens visités */
+a:visited {
+    color: MediumVioletRed ;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+}
+
+/* lien sélectionné */
+a:active {
+    color: blue;
+}
