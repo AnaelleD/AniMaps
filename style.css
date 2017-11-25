@@ -104,3 +104,55 @@ div.photodroite {
 	float: right; 
 	margin-left:10px; /* marge en pixel à gauche de la photo */ 
 } 
+
+
+
+
+
+/* paramètres du HEADER */
+
+.header {
+	height: 200px;
+	width: auto;
+	padding:25px 0px;
+	background-color: LightSlateGray   ;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: top;
+	text-align:center;
+}
+
+
+.header.h1 {
+	color: DimGrey  ;
+	font-family: Optima, sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+header.div.photogauche{
+	width: 100px; 
+	height: auto; 
+	float: left; 
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+}	
+
+header.div.photodroite{
+	float: right; 
+	margin-right:10px;
+}
+
+/* paramètres du FOOTER */
+
+.footer {
+	height: 200px;
+	width: auto;
+	padding:25px 0px;
+	background-color: LightSlateGray   ;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: top;
+	text-align:left;
+}
