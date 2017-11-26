@@ -7,17 +7,33 @@
 		<title>AniMaps</title>	
 	
 		<script>
-		 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
-		   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
-		   crossorigin=""/>
-		   
-		 <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
-		   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
-		   crossorigin="">
+			get_image = function(){
+				// Récupérer le lien vers la page dbpedia de l'espece en partant de son nom latin:
+				var url = "http://dbpedia.org/sparql";
+				var query_label_wiki = [
+					 "PREFIX dbp: <http://dbpedia.org/resource/>",
+					 "PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>",
+					 "SELECT ?label_wiki",
+					 "WHERE {dbp:Panthera_leo dbpedia-owl:wikiPageRedirects ?label_wiki }"].join(" ");
+				var query_label_wiki_Url = url+"?query="+ encodeURIComponent(query_label_wiki) +"&format=json";
+				
+				var Requete_label_wiki = new XMLHttpRequest();
+				Requete_label_wiki.open("GET", query_label_wiki_Url, true);
+				Requete_label_wiki.send(null);
+				Requete_label_wiki.onreadystatechange = function() {
+					if (Requete_label_wiki.readyState == XMLHttpRequest.DONE) {
+						var json = JSON.parse(Requete_label_wiki.responseText);
+						var label_wiki = json.results;
+						label_wiki = label_wiki["bindings"][0]["label_wiki"]["value"];
+					}
+				}
+				
+				// Récupérer l'image à partir de la page dbpedia:
+			}
 		</script>
 	</head>
 	  
-	<body class=body>
+	<body class=body onload="get_image()">
 		<header class="header"> 
 			<div class="photogauche"><img src="../Ressources/ours_blanc.jpg" alt="Ours" width="220" height="150" align="top" /></div> 
 			<div class="photodroite"><img src="../Ressources/panda.jpg" alt="Panda" width="270" height="150" align="top" /></div> 
