@@ -317,8 +317,11 @@ header.div.photodroite{
 /* paramètres du FOOTER */
 
 .footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	padding-top:50px;
 	height: 200px;
-	width: auto;
 	padding:25px 0px;
 	background-color: LightSlateGray   ;
 	background-repeat: repeat-x;
