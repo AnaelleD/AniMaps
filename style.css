@@ -149,7 +149,7 @@ div.containID ul#tiles-panel li {
 	background-position: top;
 	text-align:center;
 }
-h1 {
+header.h1 {
 	color: green;
 	font-family: Verdana;
 	font-size: 30px;
