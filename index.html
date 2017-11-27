@@ -6,31 +6,7 @@
 		<link rel="stylesheet" href="style.css">
 		<title>AniMaps</title>	
 	
-		<script>
-			get_image = function(){
-				// Récupérer le lien vers la page dbpedia de l'espece en partant de son nom latin:
-				var url = "http://dbpedia.org/sparql";
-				var query_label_wiki = [
-					 "PREFIX dbp: <http://dbpedia.org/resource/>",
-					 "PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>",
-					 "SELECT ?label_wiki",
-					 "WHERE {dbp:Panthera_leo dbpedia-owl:wikiPageRedirects ?label_wiki }"].join(" ");
-				var query_label_wiki_Url = url+"?query="+ encodeURIComponent(query_label_wiki) +"&format=json";
-				
-				var Requete_label_wiki = new XMLHttpRequest();
-				Requete_label_wiki.open("GET", query_label_wiki_Url, true);
-				Requete_label_wiki.send(null);
-				Requete_label_wiki.onreadystatechange = function() {
-					if (Requete_label_wiki.readyState == XMLHttpRequest.DONE) {
-						var json = JSON.parse(Requete_label_wiki.responseText);
-						var label_wiki = json.results;
-						label_wiki = label_wiki["bindings"][0]["label_wiki"]["value"];
-					}
-				}
-				
-				// Récupérer l'image à partir de la page dbpedia:
-			}
-		</script>
+		<!--<script type="text/javascript" src="get_image.js"></script>-->
 	</head>
 	  
 	<body class=body onload="get_image()">
