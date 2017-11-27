@@ -47,8 +47,8 @@ div.containID ul#tiles-panel li {
 .tile h1 {
     color: #253340;
     display: block;
-    font-family: Liberation Sans;
-    font-size: 16px;
+    font-family: BERLIN Sans FB demi;
+    font-size: 18px;
     font-weight: 500;
     line-height: 148%;
     margin: 0;
@@ -63,7 +63,7 @@ div.containID ul#tiles-panel li {
 .tile h2 {
     color: #253340;
     display: block;
-    font-family: Liberation Sans;
+    font-family: BERLIN Sans FB demi;
     font-size: 14px;
 	font-style: Italic;
     font-weight: 500;
@@ -118,7 +118,6 @@ div.containID ul#tiles-panel li {
 /*fin du code pour tuile de contenu*/
 
 
-
 /******************** paramètres photos header ****************************/
 
 .photogauche { 
@@ -149,11 +148,14 @@ div.containID ul#tiles-panel li {
 	background-position: top;
 	text-align:center;
 }
-header.h1 {
+
+.header h1 {
 	color: green;
-	font-family: Verdana;
-	font-size: 30px;
-	text-align: center;
+	font-family: BERLIN Sans FB demi;
+	font-size: 40px;
+	text-align: center; 
+	margin-bottom: 100px; /* marge en pixel en dessous du titre */
+	margin-top: 80px; /* marge en pixel au dessus du titre */
 }
 
 }
@@ -161,7 +163,7 @@ header.h1 {
 
 /****************************** paramètres du FOOTER ***************************/
 
-/* paramètre de la div conteneur */
+/* paramètres de la div conteneur */
 
 #containID {
 	position:relative;
@@ -175,8 +177,6 @@ header.h1 {
 
 #footer {
 	background-color: LightSlateGray   ;
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 	height: 200px;
 	text-align:left;
