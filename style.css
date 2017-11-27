@@ -2,6 +2,29 @@
 body{
 	background-color: #E0E0E5
 }
+/*code pour tuile de contenu liste des animaux de la région*/
+div.listeID ul#tiles-panel li {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0 8px 8px 0;
+    vertical-align: top;
+}
+ 
+.tile2 {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #F0F1F4;
+    border-bottom: 3px solid #F0F1F4;
+    display: inline-block;
+    height: 33%;
+    text-decoration: none;
+    vertical-align: top;
+    width: 33%;
+	}
+.tile2 a:link {color: black;}
+.tile2 a:visited {color: gray;}
+.tile2 a:hover {color: red;}
+.tile2 a:active {color: red;}
+	
 /*code pour tuile de contenu carte identité animal*/
 div.containID ul#tiles-panel li {
     display: inline-block;
@@ -18,25 +41,14 @@ div.containID ul#tiles-panel li {
     height: 33%;
     text-decoration: none;
     vertical-align: top;
-    width: 100%;
-	}
-	
-.tile2{
-    -moz-box-sizing: border-box;
-    background: none repeat scroll 0 0 #F0F1F4;
-    border-bottom: 3px solid #F0F1F4;
-    display: inline-block;
-    height: 33%;
-    text-decoration: none;
-    vertical-align: top;
-    width: 100%;
+    width: 66%;
 	}
  
 .tile h1 {
     color: #253340;
     display: block;
     font-family: Liberation Sans;
-    font-size: 46px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 148%;
     margin: 0;
@@ -45,14 +57,14 @@ div.containID ul#tiles-panel li {
     white-space: nowrap;
     text-overflow : ellipsis;
     overflow : hidden;
-    text-align : center;
+    text-align : left;
 }
 
 .tile h2 {
     color: #253340;
     display: block;
     font-family: Liberation Sans;
-    font-size: 42px;
+    font-size: 14px;
 	font-style: Italic;
     font-weight: 500;
     line-height: 148%;
@@ -62,7 +74,7 @@ div.containID ul#tiles-panel li {
     white-space: nowrap;
     text-overflow : ellipsis;
     overflow : hidden;
-    text-align : center;
+    text-align : left;
 }
 .tile img {
     float: right;
@@ -73,33 +85,21 @@ div.containID ul#tiles-panel li {
 .tile table {
     margin: auto;
     border-color: #F0F1F4;
-	width: 50%;
+	width: 100%;
 }
  
 .tile td {
     color: #F99500;
     font-family: Liberation Serif;
-    font-size: 28px;
+    font-size: 14px;
 	font-style: bold
     font-weight: 500;
     line-height: 148%;
     margin: 0;
     padding: 0 10px;
-    text-align: center;
+    text-align: left;
 	border-color: #F0F1F4;
 }
- 
-.tile2 td {
-    color: #253340;
-    font-family: Liberation Serif;
-    font-size: 28px;
-	font-weight: 500;
-    line-height: 148%;
-    margin: 0;
-    padding: 0 10px;
-    text-align: center;
-	border-color: #F0F1F4;
-} 
  
 .tile tr {
    	border-color: #F0F1F4;
@@ -108,12 +108,12 @@ div.containID ul#tiles-panel li {
 .tile p {
     color: #253340;
     font-family: Liberation Serif;
-    font-size: 28px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 148%;
     margin: 0;
     padding: 0 10px;
-    text-align: center;
+    text-align: left;
 }
 /*fin du code pour tuile de contenu*/
 
