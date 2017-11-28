@@ -1,0 +1,11 @@
+<Donnees>
+<personne class = "etudiant">
+<nom>Michaut</nom>
+<prenom>Meriem</prenom>
+<age>31</age>
+</personne>
+
+<groupe>
+<collegues>Sarah, Sara, Anaelle, Marc</collegues>
+</groupe>
+</Donnees>
