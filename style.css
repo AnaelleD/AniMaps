@@ -78,8 +78,8 @@ div.containID ul#tiles-panel li {
 }
 .tile img {
     float: right;
-	width: 100%;
-	height: 100%;
+	width: 80%;
+	height: 80%;
 }
  
 .tile table {
@@ -150,7 +150,7 @@ div.containID ul#tiles-panel li {
 }
 
 .header h1 {
-	color: green;
+	color: white;
 	font-family: BERLIN Sans FB demi;
 	font-size: 40px;
 	text-align: center; 
