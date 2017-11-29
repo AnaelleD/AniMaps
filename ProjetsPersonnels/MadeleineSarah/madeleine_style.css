@@ -1,0 +1,52 @@
+/* Auteur : S. Madeleine*/
+
+div.equipe ul#tiles-panel li {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0 8px 8px 0;
+    vertical-align: top;
+}
+ 
+.tile {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #F0F1F4;
+    border-bottom: 3px solid #F0F1F4;
+    display: inline-block;
+    height: 33%;
+    text-decoration: none;
+    vertical-align: top;
+    width: 100%;
+	}
+ 
+.tile h1 {
+    color: #253340;
+    display: block;
+    font-family: Liberation Sans;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    padding: 5px;
+    text-align : center;
+}
+
+.tile h2 {
+    color: #253340;
+    display: block;
+    font-family: Liberation Sans;
+    font-size: 20px;
+	font-weight: 500;
+    margin: 0;
+    padding: 5px;
+    text-align : center;
+}
+
+.tile li {
+    color: #253340;
+    font-family: Liberation Serif;
+    font-size: 12px;
+    font-weight: 500;
+	list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
