@@ -5,5 +5,5 @@ Déposer sur github un dossier contenant les fichiers suivants :
 ●	meriem.michaut.json
 ●	meriem.michaut.xml
 ●	meriem.michaut.xml  en XML/RDF
-Ces fichiers présente les données suivants :
-Nom, Prénom, Date de naissance, La liste de vos collégues de projet
+Ces fichiers présentent les données suivantes :
+Nom, Prénom, age, La liste de vos collégues de projet
