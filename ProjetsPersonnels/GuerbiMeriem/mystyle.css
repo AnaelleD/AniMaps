@@ -14,6 +14,18 @@ body{
 	margin-left: auto;
 	margin-right: auto;	
 }
+
+#sousdiv{
+	text-align: left;
+	font-size: 20px;
+	border-style: double;
+	width: 50%;
+	height: 50%;
+	position: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+}
 .header {
 	height: 200px;
 	width: auto;
