@@ -1,50 +1,56 @@
 
 body{
-	background-color: #E0E0E5
+	background-color: Brown;
 }
 
 #divID {
 	text-align: center;
 	font-size: 20px;
-	border-style: double;
+	border-style: hidden;
 	width: 50%;
 	height: 50%;
 	position: center;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;	
+	font-family: Georgia, serif;
+	background-color: Bisque;
+	padding-top: 10px;
 }
 
 #sousdiv{
 	text-align: left;
 	font-size: 20px;
-	border-style: double;
+	border-style: groove;
 	width: 50%;
 	height: 50%;
 	position: center;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;	
+	list-style-type: none;
+    padding: 10;
 }
 .header {
 	height: 200px;
 	width: auto;
 	padding:25px 0px;
-	background-color: LightSlateGray   ;
+	background-color: Brown;
 	background-repeat: repeat-x;
 	background-attachment: fixed;
 	background-position: top;
 	text-align:center;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 .header h1 {
-	color: green;
-	font-family: BERLIN Sans FB demi;
+	color: white;
+	font-family: Georgia, serif;
 	font-size: 40px;
 	text-align: center; 
-	margin-bottom: 100px; /* marge en pixel en dessous du titre */
+	margin-bottom: 50px; /* marge en pixel en dessous du titre */
 	margin-top: 80px; /* marge en pixel au dessus du titre */
+
 }
 
 }
@@ -52,20 +58,8 @@ body{
 
 /****************************** paramètres du FOOTER ***************************/
 
-/* paramètres de la div conteneur */
-
-#containID {
-	position:relative;
-	min-height:100%;
-	max-width:1280px;
-	margin:0 auto;
-	height: auto;
-}
-
-/* fin des paramètres de la div conteneur */ 
-
 #footer {
-	background-color: LightSlateGray   ;
+	background-color: Brown;
 	width: 100%;
 	height: 200px;
 	text-align:left;
