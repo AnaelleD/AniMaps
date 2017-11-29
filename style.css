@@ -138,9 +138,9 @@ div.containID ul#tiles-panel li {
 
 /******************************* paramètres du HEADER **************************/
 
-.header {
+#header {
+	width: 100%;
 	height: 200px;
-	width: auto;
 	padding:25px 0px;
 	background-color: LightSlateGray   ;
 	background-repeat: repeat-x;
@@ -149,29 +149,30 @@ div.containID ul#tiles-panel li {
 	text-align:center;
 }
 
-.header h1 {
+#header h1 {
 	color: white;
 	font-family: BERLIN Sans FB demi;
 	font-size: 40px;
 	text-align: center; 
-	margin-bottom: 100px; /* marge en pixel en dessous du titre */
-	margin-top: 80px; /* marge en pixel au dessus du titre */
+	margin-bottom: 0; /* marge en pixel en dessous du titre */
+	margin-top: 20px; /* marge en pixel au dessus du titre */
 }
 
-}
+.tile3 {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #F0F1F4;
+    border-bottom: 3px solid #F0F1F4;
+    display: inline-block;
+    height: 33%;
+    text-decoration: none;
+    vertical-align: center;
+    width: 33%;
+	}
+	
 /* fin des paramètres du header*/
 
 /****************************** paramètres du FOOTER ***************************/
 
-/* paramètres de la div conteneur */
-
-#containID {
-	position:relative;
-	min-height:100%;
-	max-width:1280px;
-	margin:0 auto;
-	height: auto;
-}
 
 /* fin des paramètres de la div conteneur */ 
 
@@ -180,6 +181,16 @@ div.containID ul#tiles-panel li {
 	width: 100%;
 	height: 200px;
 	text-align:left;
+}
+
+#footer p {
+    color: black;
+    font-family: Liberation Serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 148%;
+    padding: 0 10px;
+    text-align: left;
 }
 
 /* fin des paramètres du footer */

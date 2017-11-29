@@ -7,20 +7,21 @@
 		<title>AniMaps</title>	
 	
 		<script type="text/javascript" src="get_image.js"></script>
+		
 	</head>
 	  
 	<body class=body onload="get_image()">
-		<header class="header"> 
-			<div class="photogauche"><img src="ours_polaire.jpg" alt="Ours" width="220" height="150" align="top" /></div> 
-			<div class="photodroite"><img src="panda.jpg" alt="Panda" width="270" height="150" align="top" /></div> 
+		<header id="header" class="tile3" > 
+			<div class="photogauche"><img src="image/ours_polaire.jpg" alt="Ours" width="220" height="150" align="top" /></div> 
+			<div class="photodroite"><img src="image/panda.jpg" alt="Panda" width="270" height="150" align="top" /></div> 
 			<h1>Carte interactive des espèces en danger</h1>
 		</header>
 		
 		<div id="main">
 		
-			<div id="mapID">
-				<p> La carte sera ici.</p>	
+			<div id="mapID">{map}
 			</div>
+			
 			<!--*test tuile de contenu pour carte identité animal*-->
 			<div id="listeID" class="tile2"> {liste des animaux de la région}
 			</div>
@@ -72,19 +73,18 @@
 			</div>
 		</div>
 		<!--*fin code du test des tuile de contenu pour carte identité animal*-->
-				
-		<footer id="footer"> 
-			<div class= "paragraphe">
-				Liste des sources utilisées pour la map : 
-				<a href="http://leafletjs.com/reference-1.2.0.html"> Leaflet </a>
-			</div>
-			<div class= "paragraphe">
-				Liste des sources utilisées pour les informations sur les espèces : 
-				<a href="http://apiv3.iucnredlist.org/api/v3/docs"> API Redlist </a>
-			</div>
-			<div class= "paragraphe">
-				Liste des sources utilisées pour les images des espèces: 
-				<a href="http://wiki.dbpedia.org/"> DBpedia</a>  
+		
+		<footer id="footer" class="tile3"> 
+			<div >
+				<p><b>Liste des sources utilisées</b></p>
+				<p>Pour la map : 
+				<a href="http://wiki.openstreetmap.org/wiki/Main_Page">Open Street Map, </a>
+				<a href="http://leafletjs.com/reference-1.2.0.html">Leaflet, </a>
+				<a href="https://github.com/datasets/geo-countries">Geo-countries</a>
+				<p>Pour les informations sur les espèces : 
+				<a href="http://apiv3.iucnredlist.org/api/v3/docs"> API Redlist </a> </p>
+				<p>Pour les photos des espèces: 
+				<a href="http://wiki.dbpedia.org/"> DBpedia </a> </p>
 			</div>
 		</footer>
 		
