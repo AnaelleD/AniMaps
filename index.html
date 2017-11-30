@@ -6,19 +6,11 @@
 		<link rel="stylesheet" href="style.css">
 		<title>AniMaps</title>	
 	
-		<script type="text/javascript" src="get_image.js"></script>
+		<script type="text/javascript" src="image/get_image.js"></script>
 		
-		<script src='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js'></script>
-		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-
-		<!-- mapbox -->
-		<script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
-		<link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
-
-		<style>
-			#map { position:relative; width:100%; height: 400px}
-		</style>
-
+		<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+		<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+		<script src="maps/world-continents.js"></script>
 	</head>
 	  
 	<body class=body onload="get_image()">
@@ -30,7 +22,7 @@
 		
 		<div id="main">
 		
-			<div id="map">{map}
+			<div id="container">{map}
 			</div>
 			
 			<!--*test tuile de contenu pour carte identité animal*-->
@@ -89,9 +81,7 @@
 			<div >
 				<p><b>Liste des sources utilisées</b></p>
 				<p>Pour la map : 
-				<a href="http://wiki.openstreetmap.org/wiki/Main_Page">Open Street Map, </a>
-				<a href="http://leafletjs.com/reference-1.2.0.html">Leaflet, </a>
-				<a href="https://github.com/datasets/geo-countries">Geo-countries</a>
+				<a href="https://code.highcharts.com/mapdata/">Highcharts, </a>
 				<p>Pour les informations sur les espèces : 
 				<a href="http://apiv3.iucnredlist.org/api/v3/docs"> API Redlist </a> </p>
 				<p>Pour les photos des espèces: 
@@ -99,8 +89,8 @@
 			</div>
 		</footer>
 		
-
-		<script type="text/javascript" src="maps/map_layers.js"></script>
+		<script type="text/javascript" src="maps/highmaps_continents.js"></script>
+		
 	</body>
   
 </html>
