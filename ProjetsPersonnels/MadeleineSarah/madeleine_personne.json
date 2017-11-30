@@ -1,0 +1,12 @@
+{ "equipe" : 
+[ "personne" : 
+{ "name" : "MADELEINE", "firstname" : "Sarah" , "birthdate" : "07.11.1963", "mailaddress" : "s@moi.com" } , 
+"listecollegues" : [ "personne" : 
+{ "name" : "MICHAUT", "firstname" : "Meriem" , "birthdate" : "20.04.1986", "mailaddress" : "rym.guerbi@gmail.com" }, 
+"personne" : 
+{ "name" : "THOMAS", "firstname" : "Sara" , "birthdate" : "2473, Tarkossia", "mailaddress" : "queerofblades@zerf.com" }, 
+"personne" : 
+{ "name" : "WICHEGROD", "firstname" : "Pareil" , "birthdate" : "19/10/1995", "mailaddress" : "oui@non.fr"}, 
+"personne" : 
+{ "name" : "DAMBREVILLE", "firstname" : "Anaelle" , "birthdate" : "22.03.1787", "mailaddress" : "bidule273@pipi.fr"}
+]]}
