@@ -8,6 +8,17 @@
 	
 		<script type="text/javascript" src="get_image.js"></script>
 		
+		<script src='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js'></script>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+		<!-- mapbox -->
+		<script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+		<link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet' />
+
+		<style>
+			#map { position:relative; width:100%; height: 400px}
+		</style>
+
 	</head>
 	  
 	<body class=body onload="get_image()">
@@ -19,7 +30,7 @@
 		
 		<div id="main">
 		
-			<div id="mapID">{map}
+			<div id="map">{map}
 			</div>
 			
 			<!--*test tuile de contenu pour carte identité animal*-->
@@ -88,6 +99,8 @@
 			</div>
 		</footer>
 		
+
+		<script type="text/javascript" src="maps/map_layers.js"></script>
 	</body>
   
 </html>
