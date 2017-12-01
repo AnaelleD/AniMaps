@@ -107,7 +107,7 @@ div.containID ul#tiles-panel li {
  
 .tile p {
     color: #253340;
-    font-family: Liberation Serif;
+    font-family: Calibri;
     font-size: 12px;
     font-weight: 500;
     line-height: 148%;
@@ -125,7 +125,8 @@ div.containID ul#tiles-panel li {
 	margin-right:20px; /* marge en pixel à droite de la photo */ 
 	margin-left: 20px; /* marge en pixel à gauche de la photo */ 
 	margin-bottom: 20px; /* marge en pixel en dessous de la photo */
-	margin-top: 20px; /* marge en pixel au dessus de la photo */
+	max-width: 100%; /*taille maximale*/
+	height: auto; /* hauteur */
 } 
 
 .photodroite { 
@@ -133,7 +134,8 @@ div.containID ul#tiles-panel li {
 	margin-left:20px; /* marge en pixel à gauche de la photo */ 
 	margin-right:20px; /* marge en pixel à droite de la photo */ 
 	margin-bottom: 20px;
-	margin-top: 20px;
+	max-width: 100%;
+	height: auto;
 } 
 
 /******************************* paramètres du HEADER **************************/
@@ -142,7 +144,7 @@ div.containID ul#tiles-panel li {
 	width: 100%;
 	height: 200px;
 	padding:25px 0px;
-	background-color: LightSlateGray   ;
+	background-color: LightSlateGray;
 	background-repeat: repeat-x;
 	background-attachment: fixed;
 	background-position: top;
@@ -151,7 +153,7 @@ div.containID ul#tiles-panel li {
 
 #header h1 {
 	color: white;
-	font-family: BERLIN Sans FB demi;
+	font-family: Calibri;
 	font-size: 40px;
 	text-align: center; 
 	margin-bottom: 0; /* marge en pixel en dessous du titre */
@@ -169,6 +171,20 @@ div.containID ul#tiles-panel li {
     width: 33%;
 	}
 	
+.tile3  tr{
+   /* border-bottom: 4px solid #F0F1F4;
+    display: block flow;
+    height: 66%;
+	width: 66%;
+    text-decoration: none;
+    vertical-align: center;*/
+	border: 1px solid;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+	max-width: 50%;
+}
+	
 /* fin des paramètres du header*/
 
 /****************************** paramètres du FOOTER ***************************/
@@ -179,18 +195,33 @@ div.containID ul#tiles-panel li {
 #footer {
 	background-color: LightSlateGray   ;
 	width: 100%;
-	height: 200px;
+	height: 300px;
 	text-align:left;
 }
 
 #footer p {
     color: black;
     font-family: Liberation Serif;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 148%;
     padding: 0 10px;
     text-align: left;
+}
+
+.paragraphe{
+	font-family: calibri;
+	font-size: 18px;
+}
+
+table {
+    width: 100%;
+	text-align: left;
+}
+
+td, trimage{
+    border: none;
+	text-align: center;
 }
 
 /* fin des paramètres du footer */
