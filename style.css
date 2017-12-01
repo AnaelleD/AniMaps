@@ -20,10 +20,22 @@ div.listeID ul#tiles-panel li {
     vertical-align: top;
     width: 33%;
 	}
-.tile2 a:link {color: black;}
-.tile2 a:visited {color: gray;}
-.tile2 a:hover {color: red;}
-.tile2 a:active {color: red;}
+.tile2 a:link {
+	font-family: "Verdana";
+	font-size: 18px;
+	color: black;}
+.tile2 a:visited {
+	font-family: "Verdana";
+	font-size: 18px;
+	color: gray;}
+.tile2 a:hover {
+	font-family: "Verdana";
+	font-size: 18px;
+	color: red;}
+.tile2 a:active {
+	font-family: "Verdana";
+	font-size: 18px;
+	color: red;}
 	
 /*code pour tuile de contenu carte identité animal*/
 div.containID ul#tiles-panel li {
@@ -33,7 +45,24 @@ div.containID ul#tiles-panel li {
     vertical-align: top;
 }
  
-.tile {
+#containID > #info { /*code pour div info en position relative a div containID*/
+position:relative;
+float: left;
+width:66%;
+margin-left:auto;
+margin-right:auto;
+}
+
+#containID > #picture { /*code pour div picture en position relative a div containID*/
+position:relative;
+float: right;
+margin-left:auto;
+margin-right:auto;
+width:33%; 
+height:100%;
+}
+ 
+.tile { /*code pour class tile responsive*/
     -moz-box-sizing: border-box;
     background: none repeat scroll 0 0 #F0F1F4;
     border-bottom: 3px solid #F0F1F4;
@@ -47,8 +76,8 @@ div.containID ul#tiles-panel li {
 .tile h1 {
     color: #253340;
     display: block;
-    font-family: BERLIN Sans FB demi;
-    font-size: 18px;
+    font-family: "Verdana";
+    font-size: 36px;
     font-weight: 500;
     line-height: 148%;
     margin: 0;
@@ -57,14 +86,14 @@ div.containID ul#tiles-panel li {
     white-space: nowrap;
     text-overflow : ellipsis;
     overflow : hidden;
-    text-align : left;
+    text-align : center;
 }
 
 .tile h2 {
     color: #253340;
     display: block;
-    font-family: BERLIN Sans FB demi;
-    font-size: 14px;
+    font-family: "Verdana";
+    font-size: 24px;
 	font-style: Italic;
     font-weight: 500;
     line-height: 148%;
@@ -74,8 +103,20 @@ div.containID ul#tiles-panel li {
     white-space: nowrap;
     text-overflow : ellipsis;
     overflow : hidden;
-    text-align : left;
+    text-align : center;
 }
+
+.tile p {
+    color: #253340;
+    font-family: "Verdana";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 148%;
+    margin: 0;
+    padding: 0 10px;
+    text-align: left;
+}
+
 .tile img {
     float: right;
 	width: 80%;
@@ -90,8 +131,8 @@ div.containID ul#tiles-panel li {
  
 .tile td {
     color: #F99500;
-    font-family: Liberation Serif;
-    font-size: 14px;
+    font-family: "Verdana";
+    font-size: 18px;
 	font-style: bold
     font-weight: 500;
     line-height: 148%;
@@ -105,16 +146,6 @@ div.containID ul#tiles-panel li {
    	border-color: #F0F1F4;
 }
  
-.tile p {
-    color: #253340;
-    font-family: Calibri;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 148%;
-    margin: 0;
-    padding: 0 10px;
-    text-align: left;
-}
 /*fin du code pour tuile de contenu*/
 
 
@@ -142,12 +173,9 @@ div.containID ul#tiles-panel li {
 
 #header {
 	width: 100%;
-	height: 200px;
+	height: 20%;
 	padding:25px 0px;
 	background-color: LightSlateGray;
-	background-repeat: repeat-x;
-	background-attachment: fixed;
-	background-position: top;
 	text-align:center;
 }
 
@@ -195,7 +223,7 @@ div.containID ul#tiles-panel li {
 #footer {
 	background-color: LightSlateGray   ;
 	width: 100%;
-	height: 300px;
+	height: 30%;
 	text-align:left;
 }
 
