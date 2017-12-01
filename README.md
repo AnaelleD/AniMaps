@@ -7,4 +7,4 @@ https://datahelpdesk.worldbank.org/knowledgebase/topics/125589-developer-informa
 Liste des sources utilisées pour le décompte des individus : https://fr.wikipedia.org/wiki/Liste_des_100_esp%C3%A8ces_les_plus_menac%C3%A9es#Annexes
 
 API pour la carte : 
-http://leafletjs.com/reference-1.2.0.html
+https://api.highcharts.com/highcharts
