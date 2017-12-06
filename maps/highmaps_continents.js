@@ -219,7 +219,7 @@ var data = [
 // Create the chart
 Highcharts.mapChart('container', {
     chart: {
-        map: 'custom/world-palestine-highres'
+        map: 'custom/world'
     },
 
     title: {
@@ -232,6 +232,19 @@ Highcharts.mapChart('container', {
             verticalAlign: 'bottom'
         }
     },
+	
+	plotOptions:{
+        	series:{
+            	point:{
+                	events:{
+                    	click: function(){
+                        	var id_pays = this["hc-key"];
+							document.getElementById("listeID").innerHTML = id_pays;
+                        }
+                    }
+                }
+            }
+        },
 
 	legend: {
                 title: {
