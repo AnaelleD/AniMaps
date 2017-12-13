@@ -1,0 +1,258 @@
+/* Auteur : S. Madeleine, R. Michaut */
+body{
+	background-color: #E0E0E5
+}
+/*code pour tuile de contenu liste des animaux de la région*/
+div.listeID ul#tiles-panel li {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0 8px 8px 0;
+    vertical-align: top;
+}
+ 
+.tile2 {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #F0F1F4;
+    border-bottom: 3px solid #F0F1F4;
+    display: inline-block;
+    height: 33%;
+    text-decoration: none;
+    vertical-align: top;
+    width: 33%;
+	}
+.tile2 a:link {
+	font-family: "Verdana";
+	font-size: 18px;
+	color: black;}
+.tile2 a:visited {
+	font-family: "Verdana";
+	font-size: 18px;
+	color: gray;}
+.tile2 a:hover {
+	font-family: "Verdana";
+	font-size: 18px;
+	color: red;}
+.tile2 a:active {
+	font-family: "Verdana";
+	font-size: 18px;
+	color: red;}
+	
+/*code pour tuile de contenu carte identité animal*/
+div.containID ul#tiles-panel li {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 8px 8px 8px 8px;
+    vertical-align: top;
+}
+ 
+#containID > #info { /*code pour div info en position relative a div containID*/
+position:relative;
+float: left;
+width:66%;
+margin-left:auto;
+margin-right:auto;
+}
+
+#containID > #picture { /*code pour div picture en position relative a div containID*/
+position:relative;
+float: right;
+margin-left:auto;
+margin-right:auto;
+width:33%; 
+height:100%;
+}
+ 
+.tile { /*code pour class tile responsive*/
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #F0F1F4;
+    border-bottom: 3px solid #F0F1F4;
+    display: inline-block;
+    height: 33%;
+    text-decoration: none;
+    vertical-align: top;
+    width: 66%;
+	}
+ 
+.tile h1 {
+    color: #253340;
+    display: block;
+    font-family: "Verdana";
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 148%;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-overflow : ellipsis;
+    overflow : hidden;
+    text-align : center;
+}
+
+.tile h2 {
+    color: #253340;
+    display: block;
+    font-family: "Verdana";
+    font-size: 24px;
+	font-style: Italic;
+    font-weight: 500;
+    line-height: 148%;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-overflow : ellipsis;
+    overflow : hidden;
+    text-align : center;
+}
+
+.tile p {
+    color: #253340;
+    font-family: "Verdana";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 148%;
+    margin: 0;
+    padding: 0 10px;
+    text-align: left;
+}
+
+.tile img {
+    float: right;
+	width: 80%;
+	height: 80%;
+}
+ 
+.tile table {
+    margin: auto;
+    border-color: #F0F1F4;
+	width: 100%;
+}
+ 
+.tile td {
+    color: #F99500;
+    font-family: "Verdana";
+    font-size: 18px;
+	font-style: bold
+    font-weight: 500;
+    line-height: 148%;
+    margin: 0;
+    padding: 0 10px;
+    text-align: left;
+	border-color: #F0F1F4;
+}
+ 
+.tile tr {
+   	border-color: #F0F1F4;
+}
+ 
+/*fin du code pour tuile de contenu*/
+
+
+/******************** paramètres photos header ****************************/
+
+.photogauche { 
+	float: left; 
+	margin-right:20px; /* marge en pixel à droite de la photo */ 
+	margin-left: 20px; /* marge en pixel à gauche de la photo */ 
+	margin-bottom: 20px; /* marge en pixel en dessous de la photo */
+	max-width: 100%; /*taille maximale*/
+	height: auto; /* hauteur */
+} 
+
+.photodroite { 
+	float: right; 
+	margin-left:20px; /* marge en pixel à gauche de la photo */ 
+	margin-right:20px; /* marge en pixel à droite de la photo */ 
+	margin-bottom: 20px;
+	max-width: 100%;
+	height: auto;
+} 
+
+/******************************* paramètres du HEADER **************************/
+
+#header {
+	width: 100%;
+	height: 20%;
+	padding:25px 0px;
+	background-color: LightSlateGray;
+	text-align:center;
+}
+
+#header h1 {
+	color: white;
+	font-family: Calibri;
+	font-size: 40px;
+	text-align: center; 
+	margin-bottom: 0; /* marge en pixel en dessous du titre */
+	margin-top: 20px; /* marge en pixel au dessus du titre */
+}
+
+.tile3 {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #F0F1F4;
+    border-bottom: 3px solid #F0F1F4;
+    display: inline-block;
+    height: 33%;
+    text-decoration: none;
+    vertical-align: center;
+    width: 33%;
+	}
+	
+.tile3  tr{
+   /* border-bottom: 4px solid #F0F1F4;
+    display: block flow;
+    height: 66%;
+	width: 66%;
+    text-decoration: none;
+    vertical-align: center;*/
+	border: 1px solid;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+	max-width: 50%;
+}
+	
+/* fin des paramètres du header*/
+
+/****************************** paramètres du FOOTER ***************************/
+
+
+/* fin des paramètres de la div conteneur */ 
+
+#footer {
+	background-color: LightSlateGray   ;
+	width: 100%;
+	height: 30%;
+	text-align:left;
+}
+
+#footer p {
+    color: black;
+    font-family: Liberation Serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 148%;
+    padding: 0 10px;
+    text-align: left;
+}
+
+.paragraphe{
+	font-family: calibri;
+	font-size: 18px;
+}
+
+table {
+    width: 100%;
+	text-align: left;
+}
+
+td, trimage{
+    border: none;
+	text-align: center;
+}
+
+/* fin des paramètres du footer */
+
+
+

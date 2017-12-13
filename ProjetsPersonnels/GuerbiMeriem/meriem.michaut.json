@@ -1,0 +1,10 @@
+{ "_id" : 1, 
+ "Nom" : "Michaut", 
+ "Prénom" : "Meriem", 
+ "Age":"31 ans", 
+ "collegues" : [{ "_id" : 2, "Nom" : "Madeleine", "Prénom" : "Sarah", "Age":"28 ans"},
+                { "_id" : 3, "Nom" : "Thomas", "Prénom" : "Sara", "Age":"23 ans"},
+                { "_id" : 4, "Nom" : "Dambreville", "Prénom" : "Anaelle", "Age":"30 ans" },
+                { "_id" : 5, "Nom" : "Wichegrod", "Prénom" : "Marc", "Age":"22 ans"}, 
+               ] 
+}
