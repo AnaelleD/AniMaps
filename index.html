@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="style.css">
+		<title>AniMaps</title>	
+	
+		<script type="text/javascript" src="image_dbpedia/get_image.js"></script>
+		<script type="text/javascript" src="redlist/heatmap_data.js"></script>
+		
+		<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+		<script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+	</head>
+	  
+	<body class=body onload="get_image() get_heatmap()">
+		<header id="header" class="tile3" > 
+			<div class="photogauche"><img src="image/ours_polaire.jpg" alt="Ours" width="220" height="150" align="top" /></div> 
+			<div class="photodroite"><img src="image/panda.jpg" alt="Panda" width="270" height="150" align="top" /></div> 
+			<h1>Carte interactive des espèces en danger</h1>
+		</header>
+		
+		<div id="main">
+		
+			<div id="container"></div>
+			
+			<!--*tuile de contenu pour la liste des animaux*-->
+			<div id="listeID" class="tile2"> 
+				<p>{liste des animaux de la région}<p>
+			</div>
+			<!--*fin du code pour la tuile de contenu pour la liste des animaux*-->
+			<!--*tuile de contenu pour carte identité animal*-->
+		
+			<div id="containID" class="tile">
+					<h1>{Nom commun}</h1>
+					<h2>{Nom scientifique}</h2>
+					<div id="info">
+						<p>{Region de vie}, {habitat}</p>
+						<p>{Statut extinction}</p>
+						<p>{menaces}</p>
+						<p>{mesure de conservation}</p>
+							<table>
+								<tr>
+									<td>{number of population global}</td>
+									<td>{number of population global trend}</td>
+									<td>{number of population global objectif}</td>
+								</tr>
+								<tr>
+									<td><p>population globale</p></td>
+									<td><p>population globale trend</p></td>
+									<td><p>population globale objectif </p></td>
+								</tr>
+								<tr>
+									<td>{number of population region}</td>
+									<td>{number of population trend region}</td>
+									<td>{number of population objectif région}</td>
+								</tr>
+								<tr>
+									<td><p>population region</p></td>
+									<td><p>population region trend</p></td>
+									<td><p>population region objectif</p></td>
+								</tr>
+							</table>
+					</div>
+					<div id="picture">
+						<a>
+							<img id="image_wiki" alt="" />
+						</a>
+					</div>
+			</div>
+			<!--*fin code de la tuile de contenu pour carte identité animal*-->
+		</div>
+		
+		<footer id="footer" class="tile3"> 
+			<div >
+				<p><b>Liste des sources utilisées</b></p>
+				<p>Pour la map : 
+				<a href="https://api.highcharts.com/highcharts">Highcharts</a>
+				<p>Pour les informations sur les espèces : 
+				<a href="http://apiv3.iucnredlist.org/api/v3/docs"> API Redlist </a> </p>
+				<p>Pour les photos des espèces: 
+				<a href="http://wiki.dbpedia.org/"> DBpedia </a> </p>
+			</div>
+			<p>	Fièrement proposée par:  Anaelle, Marc, Sara, Sarah, Rym </p>
+				<table>
+					<tr>
+						<td id="trimage"><img src="image/red_list.png" alt="redlist" width="120" height="auto" align="top" /></td>
+						<td id="trimage"><img src="image/DBpediaLogoFull.png" alt="DBpedia" width="120" height="auto" align="top" /></td>
+						<td id="trimage"><img src="image/highcharts.png" alt="highcharts" width="200" height="auto" align="top" /></td>
+						<td id="trimage"><img src="image/PaulValery.png" alt="PaulValery" width="100" height="auto" align="top" /></td>
+					</tr>	
+				</table>
+		</footer>
+		
+		<script type="text/javascript" src="maps/highmaps_continents.js"></script>
+		
+	</body>
+  
+</html>
