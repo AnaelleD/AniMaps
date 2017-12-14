@@ -1,12 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Donnees>
-<personne class = "etudiant">
-<nom>Michaut</nom>
-<prenom>Meriem</prenom>
-<age>31</age>
-</personne>
+  
+  <PERSONNE class = "etudiant">
+    <nom>Michaut</nom>
+    <prenom>Meriem</prenom>
+    <age>31</age>
+    <mail>rym.guerbi@gmail.com</mail>
+  </PERSONNE>
 
-<groupe>
-<collegues>Sarah, Sara, Anaelle, Marc</collegues>
-</groupe>
+  <groupe>
+      <PERSONNE> 
+        <name>MADELEINE</name>
+        <firstname>Sarah</firstname>
+        <age>28</age>
+        <mail>rym.guerbi@gmail.com</mail>
+      </PERSONNE>
+
+      <PERSONNE> 
+        <name>THOMAS</name>
+        <firstname>Sara</firstname>
+        <age>24</age>
+        <mail>queerofblades@zerf.com</mail>
+      </PERSONNE>
+  
+      <PERSONNE> 
+        <name>WICHEGROD</name>
+        <firstname>Mark</firstname>
+        <age>22</age>
+        <mail>oui@non.fr</mail>
+      </PERSONNE>
+  
+      <PERSONNE> 
+        <name>DAMBREVILLE</name>
+        <firstname>Anaelle</firstname>
+        <age>30</age>
+        <mail>bidule273@pipi.fr</mail>
+      </PERSONNE>
+  
+  </groupe>
 </Donnees>
