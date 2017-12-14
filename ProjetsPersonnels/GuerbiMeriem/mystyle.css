@@ -1,0 +1,87 @@
+/* Auteur: Meriem Michaut */
+
+/* utilisation du site: colors.co pour el choix des couleurs */
+
+body{
+	background-color: #FFEECF ;
+}
+
+#divID {
+	text-align: center;
+	font-size: 15px;
+	border-style: hidden;
+	width: 50%;
+	height: 50%;
+	position: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+	padding: 5% 5% 5% 5%;
+	font-family: Georgia, serif;
+	background-color: #E8D9BD;
+	padding-top: 20px; /*espacement du texte à l'intéreieur de la div par rapport à tous les niveaux (top, right, bottom, left)*/
+ 	border-radius: 20px;
+	border-color: grey;
+	border-style: solid;
+}
+
+#sousdiv{
+	text-align: left;
+	font-size: 15px;
+	border-style: groove;
+	width: 50%;
+	height: 50%;
+	position: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+	list-style-type: none;
+    padding: 10;
+}
+
+/************** Paramètres du header ****************************************/
+.header {
+	height: 10%;
+	width: auto;
+	padding:30px 30px 30px 30px;
+	background-color: #DB4848;
+	background-position: top;
+	text-align:justify;
+	margin-bottom: 40px;
+}
+
+.header h1 {
+	color: black;
+	font-family: Georgia, serif;
+	font-size: 20px;
+	text-align: center; 
+	margin-bottom: 50px; /* marge en pixel en dessous du titre */
+	margin-top: 80px; /* marge en pixel au dessus du titre */
+	margin-right: 20%;
+
+}
+
+.photogauche { 
+	float: left; /*disposition */
+	max-width: 100%; /*taille maximale*/
+	height: auto; /*hauteur */
+	padding: 20px;
+} 
+
+/****************************** paramètres du FOOTER ***************************/
+
+#footer {
+	background-color: #DB4848;
+	width: 100%;
+	height: 200px;
+	text-align:center;
+	padding-top: 5%;
+	margin-top: 100px;
+	font-weight: bold;
+	font-family: Georgia, serif;
+}
+
+/* fin des paramètres du footer */
+
+
+
