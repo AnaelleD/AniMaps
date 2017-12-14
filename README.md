@@ -1,10 +1,11 @@
 # AniMaps
 
-Liste des sources utilisées pour la heat map:
-http://wdi.worldbank.org/table/3.4
-https://datahelpdesk.worldbank.org/knowledgebase/topics/125589-developer-information
+Animaps présente une carte intéractive des espèces en voie de disparition.
 
-Liste des sources utilisées pour le décompte des individus : https://fr.wikipedia.org/wiki/Liste_des_100_esp%C3%A8ces_les_plus_menac%C3%A9es#Annexes
+Plusieurs API sont utilisées:
 
-API pour la carte : 
-https://api.highcharts.com/highcharts
+- Pour la carte : API highcharts
+- Pour les données affichées sur la carte : API RedList
+- Pour la liste des espèces en danger dans chaque pays : API RedList
+- Pour les détails de chaque espèce : API RedList
+- Pour la photo de chaque espèce : API DBpedia
