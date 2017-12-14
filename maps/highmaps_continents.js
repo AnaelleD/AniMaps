@@ -1,11 +1,12 @@
 
-data_map = get_heatmap_data();
-console.log(data_map);
+//data_map = get_heatmap_data();
+//console.log(data_map);
 
 // data_map est modifié par des fonctions internes de highcharts. Avec nos données ça ne marche pas, il les ajoute juste a la fin.
 // Quand ça marche il remplace comme il faut les valeurs. Essaie avec le data map du dessous : 
 //data_map=[["fr",1000],["en",200]]; OK avec ça ça marche
 
+data_map=[["fr",1000],["en",200],["gl",7]];
 
 // Create the chart
 Highcharts.mapChart('container', {
@@ -30,7 +31,27 @@ Highcharts.mapChart('container', {
                 	events:{
                     	click: function(){
                         	var id_pays = this["hc-key"];
-							document.getElementById("listeID").innerHTML = id_pays;
+							var species = {};
+							var ul = document.getElementById("ul");
+							
+							var query_getspecies = "http://apiv3.iucnredlist.org/api/v3/country/getspecies/"+id_pays+"?token=9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee"; 
+							var query = new XMLHttpRequest();
+							query.open("GET", query_getspecies, true);
+							query.send(null);
+							
+							query.onreadystatechange = function() {
+							if (query.readyState == XMLHttpRequest.DONE) {
+								var json = JSON.parse(query.responseText);
+								var result = json["result"];
+								for(i=0;i<result.length;i++) {
+									var scientific_name = result[i]["scientific_name"];
+									var li = document.createElement("li");
+									li.appendChild(document.createTextNode(scientific_name));
+									ul.appendChild(li);
+									}				
+								}	
+								
+							};
                         }
                     }
                 }
