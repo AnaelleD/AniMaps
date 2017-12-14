@@ -7,30 +7,35 @@
   <foaf:lastName>Michaut</foaf:lastName>
   <foaf:firstName>Meriem</foaf:firstName>
   <foaf:age>31 ans</foaf:age>
+  <foaf: mail>rym.guerbi@gmail.com</foaf: mail>
 </foaf:Person>
 
 <foaf:Person rdf:about="#Sar">
   <foaf:lastName>Madeleine</foaf:lastName>
   <foaf:firstName>Sarah</foaf:firstName>
   <foaf:age>28 ans</foaf:age>
+  <foaf: mail>s@moi.com</foaf: mail>
 </foaf:Person>
 
 <foaf:Person rdf:about="#Sara">
   <foaf:lastName>Thomas</foaf:lastName>
   <foaf:firstName>Sara</foaf:firstName>
   <foaf:age>24 ans</foaf:age>
+  <foaf: mail>queerofblades@zerf.com</foaf: mail>
 </foaf:Person>
 
 <foaf:Person rdf:about="#Ana">
   <foaf:lastName>Dambreville</foaf:lastName>
   <foaf:firstName>Anaelle</foaf:firstName>
   <foaf:age>30 ans</foaf:age>
+  <foaf: mail>bidule273@pipi.fr</foaf: mail>
 </foaf:Person>
   
 <foaf:Person rdf:about="#Mar">
   <foaf:lastName>Wichegord</foaf:lastName>
   <foaf:firstName>Marc</foaf:firstName>
   <foaf:age>21 ans</foaf:age>
+  <foaf: mail>oui@non.fr</foaf: mail>
 </foaf:Person>
 </foaf:knows>
 </rdf:RDF>
