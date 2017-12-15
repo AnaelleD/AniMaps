@@ -7,7 +7,7 @@
 		<title>AniMaps</title>	
 	
 		<script type="text/javascript" src="image_dbpedia/get_image.js"></script>
-
+		<script type="text/javascript" src="redlist/get_infospecies.js"></script>
 		<script type="text/javascript" src="redlist/heatmap_data.js"></script>
 		
 		<script src="https://code.highcharts.com/maps/highmaps.js"></script>
@@ -20,7 +20,7 @@
 		<header id="header" class="tile3" > 
 			<div class="photogauche"><img src="image/ours_polaire.jpg" alt="Ours" width="220" height="150" align="top" /></div> 
 			<div class="photodroite"><img src="image/panda.jpg" alt="Panda" width="270" height="150" align="top" /></div> 
-			<h1>Carte interactive des espèces de plantes et d'animaux en danger dans le monde</h1>
+			<h1>Carte interactive des espèces végétales et animales menacées</h1>
 		</header>
 		
 		<div id="main">
@@ -29,7 +29,7 @@
 			
 			<!--*tuile de contenu pour la liste des animaux*-->
 			<div id="listeID" class="tile2" style="overflow: scroll ;max-height: 490px; width: 33%;"> 
-				<p>Cliquez sur un pays de la carte pour voir s'afficher ci-dessous sa liste des espèces en danger : </p>
+				<p>Cliquez sur un pays de la carte pour voir s'afficher ci-dessous sa liste des espèces en danger</p>
 				<!--*tContenu de la requête getspecies*-->
 				<ul id="ul">
 				</ul>
@@ -38,34 +38,19 @@
 			<!--*tuile de contenu pour carte identité animal*-->
 		
 			<div id="containID" class="tile">
-				<p>Cliquez sur une espèce dans la liste de gauche pour obtenir plus d'informations : </p>
-					<h1>{Nom commun}</h1>
-					<h2>{Nom scientifique}</h2>
+				<p>Cliquez sur une espèce dans la liste de gauche pour obtenir plus d'informations</p>
+					<h1 id="nomCommun"></h1></br>
+					<h2 id="nomScientifique"></h2></br>
 					<div id="info">
-						<p>{Region de vie}, {habitat}</p>
-						<p>{Statut extinction}</p>
-						<p>{menaces}</p>
-						<p>{mesure de conservation}</p>
+						<p id="habitatContainer"></p></br>
+						<p id="statut"></p></br>
+						<p id="menaces"></p></br>
+						<p id="mesuresConservations"></p></br>
 							<table>
 								<tr>
-									<td>{number of population global}</td>
-									<td>{number of population global trend}</td>
-									<td>{number of population global objectif}</td>
-								</tr>
-								<tr>
-									<td><p>population globale</p></td>
-									<td><p>population globale trend</p></td>
-									<td><p>population globale objectif </p></td>
-								</tr>
-								<tr>
-									<td>{number of population region}</td>
-									<td>{number of population trend region}</td>
-									<td>{number of population objectif région}</td>
-								</tr>
-								<tr>
-									<td><p>population region</p></td>
-									<td><p>population region trend</p></td>
-									<td><p>population region objectif</p></td>
+									<td><p id="populationContainer"></p></td></br>
+									<td><p id="populationTrendContainer"></p></td></br>
+									<td><p id="geographicrangeContainer"></p></td></br>
 								</tr>
 							</table>
 					</div>
