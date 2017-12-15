@@ -1,0 +1,41 @@
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/">
+
+
+<foaf:Person rdf:about="#MeMysefl&I">
+  <foaf:lastName>Kerrigan</foaf:lastName>
+  <foaf:firstName>Sara</foaf:firstName>
+  <foaf:birthDate>29/04/1993</foaf:age>
+	<foaf:knows>
+		<foaf:Person rdf:about="#Anaelle">
+		  <foaf:lastName>Dambreville</foaf:lastName>
+		  <foaf:firstName>Anaelle</foaf:firstName>
+		  <foaf:birthDate>15/15/15</foaf:age>
+		  <foaf:mbox rdf:resource="blahblahblah@hotmail.fr" />
+		</foaf:Person>
+
+		<foaf:Person rdf:about="#Sarah">
+		  <foaf:lastName>Madeleine</foaf:lastName>
+		  <foaf:firstName>Sarah</foaf:firstName>
+		  <foaf:birthDate>3/10/90</foaf:age>
+		  <foaf:mbox rdf:resource="tructruktruq@hotmail.fr" />
+		</foaf:Person>
+		
+		<foaf:Person rdf:about="#Rym">
+		  <foaf:lastName>Guerbi</foaf:lastName>
+		  <foaf:firstName>Rym</foaf:firstName>
+		  <foaf:birthDate>336/52/78</foaf:age>
+		  <foaf:mbox rdf:resource="camsoule@hotmail.fr" />
+		</foaf:Person>
+		
+		<foaf:Person rdf:about="#Marc">
+		  <foaf:lastName>SERIEUSEMENT</foaf:lastName>
+		  <foaf:firstName>Marc</foaf:firstName>
+		  <foaf:birthDate>64/58/42</foaf:age>
+		  <foaf:mbox rdf:resource="fckumarc@hotmail.fr" />
+		</foaf:Person>
+	</foaf:knows>
+</foaf:Person>
+
+</rdf:RDF>
