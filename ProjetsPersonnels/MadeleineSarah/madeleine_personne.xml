@@ -1,0 +1,35 @@
+<EQUIPE>
+	<PERSONNE>
+		<name>MADELEINE</name>
+		<firstname>Sarah</firstname>
+		<birthdate>07.11.1963</birthdate>
+		<mailaddress>s@moi.com</mailaddress>
+	</PERSONNE>
+	<LISTECOLLEGUES>
+		<PERSONNE> 
+			<name>MICHAUT</name>
+			<firstname>Meriem</firstname>
+			<birthdate>20.04.1986</birthdate>
+			<mailaddress>rym.guerbi@gmail.com</mailaddress>
+		</PERSONNE>
+		<PERSONNE> 
+			<name>THOMAS</name>
+			<firstname>Sara</firstname>
+			<birthdate>2473, Tarkossia</birthdate>
+			<mailaddress>queerofblades@zerf.com</mailaddress>
+		</PERSONNE>
+		<PERSONNE> 
+			<name>WICHEGROD</name>
+			<firstname>Pareil</firstname>
+			<birthdate>19/10/1995</birthdate>
+			<mailaddress>oui@non.fr</mailaddress>
+		</PERSONNE>
+		<PERSONNE> 
+			<name>DAMBREVILLE</name>
+			<firstname>Anaelle</firstname>
+			<birthdate>22.03.1787</birthdate>
+			<mailaddress>bidule273@pipi.fr</mailaddress>
+		</PERSONNE>
+	</LISTECOLLEGUES>
+	</PERSONNE>
+</EQUIPE>

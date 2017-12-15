@@ -1,0 +1,11 @@
+{ "_id" : 1, 
+ "Nom" : "Michaut", 
+ "Prénom" : "Meriem", 
+ "Age":"31 ans",
+ "mail" : "rym.guerbi@gmail.com" 
+ "collegues" : [{ "_id" : 2, "Nom" : "Madeleine", "Prénom" : "Sarah", "Age":"28 ans", "mail" : "rym.guerbi@gmail.com"},
+                { "_id" : 3, "Nom" : "Thomas", "Prénom" : "Sara", "Age":"23 ans", "mail" : "queerofblades@zerf.com"},
+                { "_id" : 4, "Nom" : "Dambreville", "Prénom" : "Anaelle", "Age":"30 ans", "mail" : "bidule273@pipi.fr" },
+                { "_id" : 5, "Nom" : "Wichegrod", "Prénom" : "Marc", "Age":"22 ans", "mail" : "oui@non.fr"}, 
+               ] 
+}

@@ -1,10 +1,10 @@
-# AniMaps
+# Bienvenue sur AniMaps!
+Animaps présente une carte intéractive des espèces en danger dans le monde.
 
-Liste des sources utilisées pour la heat map:
-http://wdi.worldbank.org/table/3.4
-https://datahelpdesk.worldbank.org/knowledgebase/topics/125589-developer-information
+Les couleurs des pays de la carte représentent le nombre d'espèces en danger.
 
-Liste des sources utilisées pour le décompte des individus : https://fr.wikipedia.org/wiki/Liste_des_100_esp%C3%A8ces_les_plus_menac%C3%A9es#Annexes
+Cliquez sur un pays pour voir la liste des espèces en danger dans ce pays.
 
-API pour la carte : 
-http://leafletjs.com/reference-1.2.0.html
+Puis cliquez sur une espèce pour avoir plus d'informations sur celle-ci.
+
+Si vous souhaitez plus d'informations sur les APIs utilisées, veuillez consulter le Wiki.

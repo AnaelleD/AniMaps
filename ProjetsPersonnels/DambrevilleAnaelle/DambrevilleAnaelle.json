@@ -1,0 +1,33 @@
+{"sujet":{
+	"nom":"Dambreville",
+	"prenom":"Anaelle",
+	"naissance":"22/03/1787",
+	"mail":"bidule273@pipi.fr",
+	"collegues":{
+		"personne1":{
+			"nom":"Wichegrod",
+			"prenom":"Pareil",
+			"naissance":"19/10/1995",
+			"mail":"oui@non.fr"
+		},
+		"personne2":{
+			"nom":"Michaut",
+			"prenom":"Rym",
+			"naissance":"20/04/1986",
+			"mail":"rym.guerbi@gmail.com"
+		},
+		"personne3":{
+			"nom":"Madeleine",
+			"prenom":"Sarah",
+			"naissance":"07/11/1963",
+			"mail":"s@moi.com"
+		},
+		"personne4":{
+			"nom":"Thomas",
+			"prenom":"Sara",
+			"naissance":"2473/Tarkossia",
+			"mail":"QueryOfBlades@zerg.com"
+		}
+		
+	}
+}}
