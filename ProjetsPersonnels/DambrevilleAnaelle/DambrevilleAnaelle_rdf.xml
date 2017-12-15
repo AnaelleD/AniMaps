@@ -1,0 +1,38 @@
+<!-- RDF vérifié sur : https://www.w3.org/RDF/Validator/-->
+<rdf:RDF 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/">
+	<foaf:Person rdf:about="#Anaelle">
+		<foaf:name>Anaelle Dambreville</foaf:name>
+		<foaf:dateOfBirth>1787-03-22</foaf:dateOfBirth>
+		<foaf:mbox rdf:resource="mailto:bidule273@pipi.fr"/>
+		<foaf:knows> <!--"knows" prend en objet seulement 1 personne-->
+			<foaf:Person rdf:about="#Marc">
+				<foaf:name>Pareil Wichegrod</foaf:name>
+				<foaf:dateOfBirth>1995-10-19</foaf:dateOfBirth>
+				<foaf:mbox rdf:resource="mailto:oui@non.fr"/>
+			</foaf:Person>
+		</foaf:knows>
+		<foaf:knows>
+			<foaf:Person rdf:about="#Rym">
+				<foaf:name>Rym Michaut</foaf:name>
+				<foaf:dateOfBirth>1986-04-20</foaf:dateOfBirth>
+				<foaf:mbox rdf:resource="mailto:rym.guerbi@gmail.com"/>
+			</foaf:Person>
+		</foaf:knows>
+		<foaf:knows>
+			<foaf:Person rdf:about="#Sarah">
+				<foaf:name>Sarah Madeleine</foaf:name>
+				<foaf:dateOfBirth>1963-11-07</foaf:dateOfBirth>
+				<foaf:mbox rdf:resource="mailto:s@moi.com"/>
+			</foaf:Person>
+		</foaf:knows>
+		<foaf:knows>
+			<foaf:Person rdf:about="#Sara">
+				<foaf:name>Sara Thomas</foaf:name>
+				<foaf:dateOfBirth>2473-Tarkossia</foaf:dateOfBirth>
+				<foaf:mbox rdf:resource="mailto:QueryOfBlades@zerg.com"/>
+			</foaf:Person>			
+		</foaf:knows>
+	</foaf:Person>
+</rdf:RDF>

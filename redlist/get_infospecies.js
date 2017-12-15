@@ -35,7 +35,7 @@ function get_species(){
 														infos[j]["Threats"] = json.Threats;
 														infos[j]["ConservationMeasures"] = json.ConservationMeasures;
 																}
-															}
+															})
 														}
-													}
+													})
 												}	

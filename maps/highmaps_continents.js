@@ -48,34 +48,33 @@ Highcharts.mapChart('container', {
 									li.innerHTML = '<a href="#/">'+scientific_name+'</a>'; 
 									li.onclick = (function(i){
 										return function(){
+											var scientific_name_wiki = result[i]["scientific_name"].replace(" ","_");
+											get_image(scientific_name_wiki);
+											
 											var selectedSpeciesName = result[i]["scientific_name"];
 											var selectedSpeciesId = result[i]["taxonid"];
-												
 											var query_infospecies = "http://apiv3.iucnredlist.org/api/v3/species/narrative/id/"+selectedSpeciesId+"?token=c708be0c4f48fe00f49303fa23fd85fead705bf151cf4c14add14a5a7d833f68"; 
 
 											console.log(query_infospecies); // REQUETE OK
 											
 											// FETCH A TESTER
 											fetch(query_infospecies).then(function(response) {
-												var contentType = response.headers.get("content-type");
-												if(contentType && contentType.indexOf("application/json") !== -1) {
 												return response.json().then(function(json) {
 													console.log(json);
-											}
+													})
+											})
 										}
-									}											
-											})(i);
+									})(i);
 									ul.appendChild(li);									
-									}
-									
-								}								
-							};
+								}
+							}								
                         }
                     }
                 }
             }
-        },
-
+        }
+	},
+	
 	legend: {
                 title: {
                     text: 'Nombre d\'espèces en danger'
