@@ -1,41 +1,40 @@
-
-// FICHIER DE TEST ---- PAS UTILISE
-function get_species(){
-	console.log(selectedSpeciesName);
-	console.log(selectedSpeciesId);
-	var query_infospecies = "http://apiv3.iucnredlist.org/api/v3/country/list?token=9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee"; 
-	var query = new XMLHttpRequest();
-	query.open("GET", query_infospecies, true);
-	query.send(null);
-	
-	query.onreadystatechange = function() {
-		if (query.readyState == XMLHttpRequest.DONE) {
-			var json = JSON.parse(query.responseText);
-			var result = json["result"];
-			var population = result[i]["Population"];
-			var habitat = result[i]["Habitat"];
-			var threats = result[i]["Threats"];
-			var conservationMeasures = result[i]["ConservationMeasures"];
-			}
-			console.log(population);
-			console.log(habitat);
-			console.log(threats);
-			console.log(conservationMeasures);
-		}
-		}
-
-		
-											fetch(query_infospecies).then(function(response) {
-												var contentType = response.headers.get("content-type");
-												if(contentType && contentType.indexOf("application/json") !== -1) {
-												return response.json().then(function(json) {;
-												for(j=0;j<infos.length;j++){
-														infos[j]["Population"] = json.Population;
-														infos[j]["Habitat"] = json.Habitat;
-														infos[j]["Threats"] = json.Threats;
-														infos[j]["ConservationMeasures"] = json.ConservationMeasures;
-																}
-															})
-														}
-													})
-												}	
+get_infospecies = function(selectedSpeciesId,selectedSpeciesName){
+	var query_infospecies = "http://apiv3.iucnredlist.org/api/v3/species/narrative/id/"+selectedSpeciesId+"?token=c708be0c4f48fe00f49303fa23fd85fead705bf151cf4c14add14a5a7d833f68"; 
+	fetch(query_infospecies).then(function(response) {
+		return response.json().then(function(json) {
+			//console.log(json);
+			var result = json.result;
+			var population = result[0]["population"];
+			var threats = result[0]["threats"];
+			var populationtrend = result[0]["populationtrend"];
+			var conservationmeasures = result[0]["conservationmeasures"];
+			var geographicrange = result[0]["geographicrange"];
+			var habitat = result[0]["habitat"];
+			
+			var nomCommun = document.getElementById('nomCommun');
+			nomCommun.innerHTML = "";
+			
+			var populationContainer = document.getElementById('populationContainer');
+			populationContainer.innerHTML = '<p>Population : <br />'+population+'</p>';
+			
+			var populationTrendContainer = document.getElementById('populationTrendContainer');
+			populationTrendContainer.innerHTML = '<p>Population trend : <br />'+populationtrend+'</p>';
+			
+			var nomScientifique = document.getElementById('nomScientifique');
+			nomScientifique.innerHTML = selectedSpeciesName;
+			
+			var mesuresConservations = document.getElementById('mesuresConservations');
+			mesuresConservations.innerHTML = '<p>Conservations measures : <br />'+conservationmeasures+'</p>';
+			
+			var habitatContainer = document.getElementById('habitatContainer');
+			habitatContainer.innerHTML = '<p>Habitat : <br />'+habitat+'</p>';
+			
+			var geographicrangeContainer = document.getElementById('geographicrangeContainer');
+			geographicrangeContainer.innerHTML = '<p>Geaographic range : <br />'+geographicrange+'</p>';
+			
+			var menaces = document.getElementById('menaces');
+			menaces.innerHTML = '<p>Threats : <br />'+threats+'</p>';
+			
+		})
+	})
+}
