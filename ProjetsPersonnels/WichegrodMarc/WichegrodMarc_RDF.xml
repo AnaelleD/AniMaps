@@ -1,0 +1,38 @@
+<!-- RDF vérifié sur : https://www.w3.org/RDF/Validator/-->
+<rdf:RDF 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/">
+	<foaf:Person rdf:about="#Marc">
+		<foaf:name>Pareil Wichegrod</foaf:name>
+		<foaf:dateOfBirth>19/10/1995</foaf:dateOfBirth>
+		<foaf:mbox rdf:resource="mailto:oui@non.fr"/>
+			<foaf:Person rdf:about="#Rym">
+				<foaf:name>Rym Michaut</foaf:name>
+				<foaf:dateOfBirth>02/08/1992</foaf:dateOfBirth>
+				<foaf:mbox rdf:resource="mailto:rym.michaut@gmail.com"/>
+			</foaf:Person>
+		</foaf:knows>
+		<foaf:knows>
+			<foaf:Person rdf:about="#Anaelle">
+				<foaf:name>Anaelle Dambreville</foaf:name>
+				<foaf:dateOfBirth>01/02/1999</foaf:dateOfBirth>
+				<foaf:mbox rdf:resource="mailto:anaelle.dambreville@gmal.com"/>
+			</foaf:Person>
+		</foaf:knows>
+		<foaf:knows>
+		<foaf:knows>
+			<foaf:Person rdf:about="#Sara">
+				<foaf:name>Sara Thomas</foaf:name>
+				<foaf:dateOfBirth>25/10/1994</foaf:dateOfBirth>
+				<foaf:mbox rdf:resource="mailto:sara.thomas@gmail.com"/>
+			</foaf:Person>			
+		</foaf:knows>
+		<foaf:knows>
+			<foaf:Person rdf:about="#Sarah">
+				<foaf:name>Sarah Madeleine</foaf:name>
+				<foaf:dateOfBirth>25/11/1986</foaf:dateOfBirth>
+				<foaf:mbox rdf:resource="madeleine.sarah@gmail.com"/>
+			</foaf:Person>
+		</foaf:knows>
+	</foaf:Person>
+</rdf:RDF>

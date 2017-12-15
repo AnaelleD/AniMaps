@@ -1,0 +1,34 @@
+{"sujet":
+	{
+	"membres":{
+		"personne1":{
+			"nom":"Michaut",
+			"prenom":"Rym",
+			"naissance":"02/08/1992",
+			"mail":"rym.michaut@gmail.com"
+		},
+		"personne2":{
+			"nom":"Dambreville",
+			"prenom":"Anaelle",
+			"naissance":"01/02/1999",
+			"mail":"anaelle.dambreville@gmail.com"
+		},
+		"personne3":{
+			"nom":"Thomas",
+			"prenom":"Sara",
+			"naissance":"25/10/1994",
+			"mail":"sara.thomas@gmail.com"
+		},
+		"personne4":{
+			"nom":"Madeleine",
+			"prenom":"Sarah",
+			"naissance":"25/11/1986",
+			"mail":"madeleine.sarah@gmail.com"
+		},
+		"nom":"Wichegrod",
+		"prenom":"Pareil",
+		"naissance":"19/10/1995",
+		"mail":"oui@non.fr"
+		
+	}
+}}
