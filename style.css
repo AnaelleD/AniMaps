@@ -7,8 +7,13 @@ div.listeID ul#tiles-panel li {
     display: inline-block;
     list-style: none outside none;
     margin: 0 8px 8px 0;
-    vertical-align: top;
+    vertical-align: top;	
 }
+ 
+ li{
+ 	list-style: none;
+	margin-bottom : 10px;
+	}
  
 .tile2 {
     -moz-box-sizing: border-box;
@@ -17,7 +22,10 @@ div.listeID ul#tiles-panel li {
     display: inline-block;
     text-decoration: none;
     vertical-align: top;
+   	list-style: none;
+  	margin-bottom : 40px;
 	}
+
 .tile2 p {
     color: #253340;
     font-family: "Verdana";
@@ -27,7 +35,9 @@ div.listeID ul#tiles-panel li {
     margin: 0;
     padding: 0 10px;
     text-align: left;
+  	font-size : 13px;
 }
+
 .tile2 a:link {
 	font-family: "Verdana";
 	font-size: 18px;
@@ -59,6 +69,10 @@ float: left;
 width:66%;
 margin-left:auto;
 margin-right:auto;
+}
+
+#containID p{
+font-size : 13px;
 }
 
 #containID > #picture { /*code pour div picture en position relative a div containID*/
@@ -153,7 +167,7 @@ height:100%;
 .tile tr {
    	border-color: #F0F1F4;
 }
- 
+
 /*fin du code pour tuile de contenu*/
 
 
