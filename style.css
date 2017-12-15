@@ -15,11 +15,19 @@ div.listeID ul#tiles-panel li {
     background: none repeat scroll 0 0 #F0F1F4;
     border-bottom: 3px solid #F0F1F4;
     display: inline-block;
-    height: 33%;
     text-decoration: none;
     vertical-align: top;
-    width: 33%;
 	}
+.tile2 p {
+    color: #253340;
+    font-family: "Verdana";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 148%;
+    margin: 0;
+    padding: 0 10px;
+    text-align: left;
+}
 .tile2 a:link {
 	font-family: "Verdana";
 	font-size: 18px;
