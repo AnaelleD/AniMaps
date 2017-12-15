@@ -1,11 +1,10 @@
-# AniMaps
+# Bienvenue sur AniMaps!
+Animaps présente une carte intéractive des espèces en danger dans le monde.
 
-Animaps présente une carte intéractive des espèces en voie de disparition.
+Les couleurs des pays de la carte représentent le nombre d'espèces en danger.
 
-Plusieurs API sont utilisées:
+Cliquez sur un pays pour voir la liste des espèces en danger dans ce pays.
 
-- Pour la carte : API highcharts
-- Pour les données affichées sur la carte : API RedList
-- Pour la liste des espèces en danger dans chaque pays : API RedList
-- Pour les détails de chaque espèce : API RedList
-- Pour la photo de chaque espèce : API DBpedia
+Puis cliquez sur une espèce pour avoir plus d'informations sur celle-ci.
+
+Si vous souhaitez plus d'informations sur les APIs utilisées, veuillez consulter le Wiki.
