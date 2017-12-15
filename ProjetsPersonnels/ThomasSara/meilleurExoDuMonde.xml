@@ -1,0 +1,32 @@
+	<meMyselfandI>
+		<nom>Kerrigan</nom>
+		<prenom>Sara</prenom>
+		<naissance>29/04/1993</naissance>
+		<mail>cacommenceàetrelong@jenaimarre.com</mail>
+	</meMyselfandI>
+	<team>
+		<frenz>
+			<nom>Dambreville</nom>
+			<prenom>Anaelle</prenom>
+			<naissance>15/15/15</naissance>
+			<mail>pwetpwet@camembert.com</mail>
+		</frenz>
+		<frenz>
+			<nom>Sarah</nom>
+			<prenom>Madeleine</prenom>
+			<naissance>14/14/14</naissance>
+			<mail>jaimepaslechocolat@meufchelou.com</mail>
+		</frenz>
+		<frenz>
+			<nom>Guerbi</nom>
+			<prenom>Rym</prenom>
+			<naissance>13/13/13</naissance>
+			<mail>laseuleetlunique@rym.com</mail>
+		</frenz>
+		<frenz>
+			<nom>Nom de famille imbitable</nom>
+			<prenom>Marc</prenom>
+			<naissance>12/12/12</naissance>
+			<mail>changedenomdefamillestp@merci.com</mail>
+		</frenz>
+</team>
