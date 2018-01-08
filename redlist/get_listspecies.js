@@ -3,16 +3,13 @@ get_listspecies = function(id_pays){
 	var queries = [];
 	$('#ul').empty();
 	var ul = document.getElementById("ul");
+	var token = document.getElementById("itoken").value;
+			
+	var query_getspecies = "http://apiv3.iucnredlist.org/api/v3/country/getspecies/"+id_pays+"?token="+token; 
 
-	var query_getspecies = "http://apiv3.iucnredlist.org/api/v3/country/getspecies/"+id_pays+"?token=9bb4facb6d23f48efbf424bb05c0c1ef1cf6f468393bc745d42179ac4aca5fee"; 
-	var query = new XMLHttpRequest();
-	query.open("GET", query_getspecies, true);
-	query.send(null);
-
-	query.onreadystatechange = function() {
-		if (query.readyState == XMLHttpRequest.DONE) {
-			var json = JSON.parse(query.responseText);
-			var result = json["result"];
+	fetch(query_getspecies).then(function(response) {
+		return response.json().then(function(json) {
+			var result = json.result;
 			for(i=0;i<result.length;i++) {
 				var scientific_name = result[i]["scientific_name"];
 				var id_species = result[i]["taxonid"];
@@ -30,6 +27,6 @@ get_listspecies = function(id_pays){
 				})(i);
 				ul.appendChild(li);									
 			}
-		}								
-	}
+		})								
+	})
 }

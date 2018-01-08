@@ -1,5 +1,6 @@
 get_infospecies = function(selectedSpeciesId,selectedSpeciesName){
-	var query_infospecies = "http://apiv3.iucnredlist.org/api/v3/species/narrative/id/"+selectedSpeciesId+"?token=c708be0c4f48fe00f49303fa23fd85fead705bf151cf4c14add14a5a7d833f68"; 
+	var token = document.getElementById("itoken").value;
+	var query_infospecies = "http://apiv3.iucnredlist.org/api/v3/species/narrative/id/"+selectedSpeciesId+"?token="+token; 
 	fetch(query_infospecies).then(function(response) {
 		return response.json().then(function(json) {
 			//console.log(json);

@@ -1,4 +1,3 @@
-// A. Dambreville //
 get_image = function(scientific_name_wiki){
 	
 	///// Récupérer le lien vers la page dbpedia principale de l'espece en partant de son nom scientifique /////
